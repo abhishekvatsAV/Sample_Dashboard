@@ -1,0 +1,353 @@
+.dashboard {
+  background: #e7efff;
+  flex: 90%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.intro {
+  height: 101px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: aquamarine;
+  background-image: url("/images/bigCircles.svg");
+  border-radius: 0px 0px 10px 10px;
+}
+
+.intro > h1 {
+  color: #fff;
+  /* H1 bold */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 67.2px */
+  text-transform: capitalize;
+}
+
+.intro > p {
+  color: #fff;
+
+  /* Title 1 */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 26.6px */
+  text-transform: capitalize;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2.25fr 1.5fr;
+  gap: 10px;
+  height: 100vh;
+  padding: 10px;
+}
+
+.grid > div {
+  border-radius: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(24, 120, 242, 0.25);
+  padding: 20px 16px;
+}
+
+.bargraph1box {
+  grid-column: 2/5;
+}
+
+.flexbox {
+  grid-column: 2/5;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: none !important;
+  box-shadow: none !important;
+  background: #e7efff !important;
+}
+
+.quiz {
+  grid-column-end: auto;
+  flex: 2;
+  border-radius: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(24, 120, 242, 0.25);
+  padding: 20px 16px;
+}
+
+.days7 {
+  flex: 3;
+  border-radius: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(24, 120, 242, 0.25);
+  padding: 20px 16px;
+}
+
+/* for 1st grid box */
+
+.grid-1 {
+  color: #333;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 21px */
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.graphbox {
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+  margin-top: 11px;
+}
+
+.graphboxfirstchild {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: end;
+}
+
+.graphboxfirstchild > h1 {
+  color: #333;
+  /* H3 bold */
+  font-family: Poppins;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 46.2px */
+}
+
+.graphbox2child {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.graphbox2child > div {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  background: rgba(1, 142, 66, 0.1);
+  padding: 8px;
+  border-radius: 4px;
+  color: #018e42;
+}
+
+.graphbox2child > p {
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+.week {
+  display: flex;
+  gap: 15px;
+}
+
+.week > div {
+  color: #333;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.grid7 > h5 {
+  color: #333;
+  /* H5 */
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 21px */
+  text-transform: capitalize;
+}
+
+.chaptergrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.chaptergrid > div {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.courseBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.courseBlock p:first-child {
+  color: #333;
+
+  /* body bold */
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 18.2px */
+}
+
+.courseBlock p:nth-child(2) {
+  color: rgba(51, 51, 51, 0.5);
+
+  /* caption */
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 15.4px */
+  text-transform: capitalize;
+}
+
+.yAxisBar1 {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  padding-left: 20px;
+  align-items: flex-end;
+}
+
+.yAxisBar1 > p {
+  color: #333;
+  text-align: right;
+
+  /* caption */
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 15.4px */
+  text-transform: capitalize;
+}
+
+.xAxisBar1 {
+  display: flex;
+  flex-direction: row;
+  /* gap: 30px; */
+  justify-content: space-around;
+  padding-bottom: 4px;
+}
+
+.xAxisBar1 > p {
+  color: #333;
+  text-align: center;
+
+  /* caption */
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 15.4px */
+  text-transform: capitalize;
+}
+
+.yAxisBar2 {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-left: 14px;
+  align-items: flex-end;
+}
+
+.yAxisBar2 > p {
+  color: #333;
+
+  /* caption */
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 15.4px */
+  text-transform: capitalize;
+}
+
+.xAxisBar2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.xAxisBar2 > p {
+  color: #333;
+
+  /* caption */
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 15.4px */
+  text-transform: capitalize;
+}
+
+.circle {
+  width: 16.312px;
+  height: 16.312px;
+  border-radius: 50%;
+  border: 2px solid #0d62ff;
+}
+
+.firstCircle {
+  margin-top: 27px;
+}
+
+.line {
+  width: 0.816px;
+  height: 35px;
+  background: #e7efff;
+  margin-left: 7.5px;
+}
+
+.bargrp1 {
+  display: flex;
+  flex-direction: row;
+  /* gap: 57px; */
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.bar {
+  height: 255.239px;
+  background-color: #e7efff;
+  width: 17px;
+  border-radius: 100px;
+  position: relative;
+}
+
+.smallBar {
+  position: absolute;
+  bottom: 0;
+  width: 17px;
+  background-color: #0d62ffcc;
+  border-radius: 100px;
+  transition: all 1s ease-in-out;
+}
+
+.changebar {
+  border-radius: 0;
+  width: 8px;
+}
+
+.change {
+  border-radius: 0;
+  width: 8px;
+}
